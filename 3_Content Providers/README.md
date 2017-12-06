@@ -6,14 +6,14 @@ Write a program to create an activity with two text boxes (date /time and note c
 
 ## Screenshots
 ### Notes Saver
-[!Alt text](screenshots/3a.png?raw=true)
-[!Alt text](screenshots/3b.png?raw=true)
-[!Alt text](screenshots/3c.png?raw=true)
-[!Alt text](screenshots/3d.png?raw=true)
+![Alt text](screenshots/3a.png?raw=true)
+![Alt text](screenshots/3b.png?raw=true)
+![Alt text](screenshots/3c.png?raw=true)
+![Alt text](screenshots/3d.png?raw=true)
 ### Notes Viewer
-[!Alt text](screenshots/3e.png?raw=true)
-[!Alt text](screenshots/3f.png?raw=true)
-[!Alt text](screenshots/3g.png?raw=true)
+![Alt text](screenshots/3e.png?raw=true)
+![Alt text](screenshots/3f.png?raw=true)
+![Alt text](screenshots/3g.png?raw=true)
 
 ## Setup
 There are 2 Apps required to demonstrate content providers.
