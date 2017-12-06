@@ -1,6 +1,6 @@
-#Android Lab Programs For Dr. AIT Bangalore
+# Android Lab Programs For Dr. AIT Bangalore
 These Android lab programs are a part of the syllabus at Dr. AIT and teach some basic cocepts on Android App Development
-##Overview
+## Overview
 This repository contains a set of 8 programs illustrating these concepts: 
 1. **Database**
 Write a program to create an Activity to read Employee Details (EmpId, Name, Age, Address) from user and store to database and create a menu with menu item (Show Details) on pressing menu details it must go to another activity with employee id search box and search button and display the employee details on the screen.
@@ -19,12 +19,12 @@ Create an .aidl service to do add, subtraction and multiplication and create ano
 8. **Making a Call**
 Create an activity like a phone dialer with (1,2,3,4,5,6,7,8,9,0,*,#) buttons and call and save button on pressing the call button, it must call the phone number and on pressing the save button it must save the number to the phone contacts.
 
-#####Note:
+##### Note:
 Each project will have 2 directories corresponding to the project:
 		- java : Having the java files like Activities and Services
 		- xml  : Having the xml files like layouts and AndroidManifest
 	Kindly change the package wherever applicable.
 
-##Setup
+## Setup
 These projects only contain the essential code and do not contain the whole AndroidStudio/Eclipse projects.
 Kindly create the project and copy the necessary code as required. **Each project README will explain how to setup the project.**
