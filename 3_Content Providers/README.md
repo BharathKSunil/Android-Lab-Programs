@@ -22,7 +22,7 @@ There are 2 Apps required to demonstrate content providers.
 
 ### Notes Saver
 1. Create a New Android Project by the name **Notes Saver** and resulting package name **com.bharathksunilk.notes.saver**
-2. Let the App have an Activity, copy contents of [activity_main.xml](xml/NoteSaver/activity_main.xml) and [MainActivity.java](java/com/bharathksunilk/notes/saver/MainActivity.java)
+2. Let the App have an Activity, copy contents of [activity_main.xml](xml/NotesSaver/activity_main.xml) and [MainActivity.java](java/com/bharathksunilk/notes/saver/MainActivity.java)
 3. Create a java class [DBHandler.java](java/com/bharathksunilk/notes/saver/DBHandler.java) for managing Database.
 4. Create a java class [NotesProvider.java](java/com/bharathksunilk/notes/saver/NotesProvider.java) which will be our content provider.
 5. Update the AndroidManifest:
@@ -35,7 +35,7 @@ android:exported="true" />
 
 ### Notes Viewer
 1. Create a New Android Project by the name **Notes Viewer** and resulting package name **com.bharathksunilk.notes.viewer**
-2. Let the App have an Activity, copy contents of [activity_main.xml](xml/NoteViewer/activity_main.xml) and [MainActivity.java](java/com/bharathksunilk/notes/viewer/MainActivity.java)
+2. Let the App have an Activity, copy contents of [activity_main.xml](xml/NotesViewer/activity_main.xml) and [MainActivity.java](java/com/bharathksunilk/notes/viewer/MainActivity.java)
 
 ## Run
 Run the Notes Saver application  and enter dates as dd/MM/yyyy and the contents
