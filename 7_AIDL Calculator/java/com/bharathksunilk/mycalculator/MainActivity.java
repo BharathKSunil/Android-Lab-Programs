@@ -11,11 +11,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bharathksunilk.aidlservice.IMyAidlInterface;
+
 public class MainActivity extends Activity implements View.OnClickListener, ServiceConnection {
 
     private EditText et_first, et_second;
     private TextView tv_result;
-    private IMyCalService myCalService;
+    private IMyAidlInterface myCalService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +29,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Serv
 
         setClickListener(R.id.btn_add, R.id.btn_sub, R.id.btn_mul);
 
-        Intent intent = new Intent(this, MyCalService.class);
+        Intent intent = new Intent();
+        intent.setAction("com.bharathksunilk.aidlservice.service.calculate");
+        intent.setPackage("com.bharathksunilk.aidlservice");
         bindService(intent, this, BIND_AUTO_CREATE);
     }
 
@@ -57,7 +61,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Serv
                 break;
             case R.id.btn_sub:
                 try {
-                    int result=myCalService.sub(a,b);
+                    int result=myCalService.subtract(a,b);
                     String res=a+" - "+b+" = "+result;
                     tv_result.setText(res);
                 } catch (Exception e) {
@@ -67,7 +71,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Serv
                 break;
             case R.id.btn_mul:
                 try {
-                    int result=myCalService.mul(a,b);
+                    int result=myCalService.multiply(a,b);
                     String res=a+" * "+b+" = "+result;
                     tv_result.setText(res);
                 } catch (Exception e) {
@@ -82,12 +86,13 @@ public class MainActivity extends Activity implements View.OnClickListener, Serv
     @Override
     public void onServiceConnected(ComponentName name, IBinder iBinder) {
         Toast.makeText(getBaseContext(), "Service Connected", Toast.LENGTH_LONG).show();
-        myCalService=IMyCalService.Stub.asInterface(iBinder);
+        myCalService=IMyAidlInterface.Stub.asInterface(iBinder);
     }
 
     //This method is called when the service gets disconnected from the activity
     @Override
     public void onServiceDisconnected(ComponentName name) {
+        Toast.makeText(getBaseContext(), "Service Disconnected", Toast.LENGTH_LONG).show();
     }
 
     //This function adds onClickListener for all the views with the ids
