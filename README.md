@@ -21,9 +21,9 @@ Create an activity like a phone dialer with (1,2,3,4,5,6,7,8,9,0,*,#) buttons an
 
 ##### Note:
 Each project will have 2 directories corresponding to the project:
-		- java : Having the java files like Activities and Services
-		- xml  : Having the xml files like layouts and AndroidManifest
-	Kindly change the package wherever applicable.
+- **java** : Having the java files like Activities and Services
+- **xml**  : Having the xml files like layouts and AndroidManifest
+**Kindly change the package wherever applicable.**
 
 ## Setup
 These projects only contain the essential code and do not contain the whole AndroidStudio/Eclipse projects.
