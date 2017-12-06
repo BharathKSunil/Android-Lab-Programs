@@ -38,6 +38,6 @@ android:exported="true" />
 2. Let the App have an Activity, copy contents of [activity_main.xml](xml/NotesViewer/activity_main.xml) and [MainActivity.java](java/com/bharathksunilk/notes/viewer/MainActivity.java)
 
 ## Run
-Run the Notes Saver application  and enter dates as dd/MM/yyyy and the contents
+Run the Notes Saver application first and enter dates as dd/MM/yyyy and the contents. After which run the Notes Viewer app, click the button and you will recieve notes for today if you have saved any
 #### NOTE: 
 We haven't included empty EditText Checks yet.
