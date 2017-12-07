@@ -37,7 +37,7 @@ There are 2 Apps required to demonstrate Remote AIDL service implementation
 	 - Write the interface in it as provided in IMyAidlInterface.aidl .
 	 - **NOTE:** In android studio the aidl file is created in a separate directory **aidl/**
 
-#### My Calculator
+### My Calculator
 1. Create a New Android Project by the name **My Calculator** and resulting package name **com.bharathksunilk.mycalculator**
 2. Let the App have a Launcher Activity, copy contents of [activity_main.xml](xml/MyCalculator/activity_main.xml) and [MainActivity.java](java/com/bharathksunilk/mycalculator/MainActivity.java)
 3. Create the .aidl file: (methods are different for **Eclipse IDE** and **Android Studio**)
